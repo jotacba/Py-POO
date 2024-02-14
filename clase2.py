@@ -1,2 +1,0 @@
-variable = "rompe"
-print(variable)

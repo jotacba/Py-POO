@@ -1,0 +1,2 @@
+variable = "rompe"
+print(variable)

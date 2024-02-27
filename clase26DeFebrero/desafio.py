@@ -156,13 +156,10 @@ def empleadoConMasClientes(empleados):
     nombre_empleado = ""
     for empleado in empleados:
         if empleado.categoria == Categoria.COMISION.value:
-            #max_clientes_anterior = 0
             if empleado.clientesCaptados > max_clientes_anterior: 
                 max_clientes_anterior = empleado.clientesCaptados
                 max_clientes_actual = max_clientes_anterior
                 nombre_empleado = empleado.nombre + " " + empleado.apellido
-                
-            #print(empleado.clientesCaptados)
 
     print(f'El empleado con la mayor cantidad de clientes es: {nombre_empleado}')
 

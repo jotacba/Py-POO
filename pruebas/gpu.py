@@ -84,8 +84,13 @@ class Celular(Hardware):
         print(f'Pixeles de la camara: {self.pixeles}')
         print(f'Lista de contactos: {self.contactos}')
     
+    #para agregar numeros a nuestro diccionario de contactos, la funcion ademas del self debe recibir
+    #2 parametros, nombre y numero
     def agregar_numero(self, nombre, numero):
         self.contactos[nombre] = numero
+    
+    def borrar_numero(self, nombre):
+        del self.contactos[nombre]
         
 placa1 = Gpu(Fabricante.NVIDIA.value, Condicion.USADO.value, Estado.LISTO.value, "Negro", 
              "$5000", "4 GB", 1, "1920x1080", 5)

@@ -114,5 +114,5 @@ print(f'calcular el precio : {sumar_iva(900)}')
 def bienvenida(nombre, club, mensaje):
     print(f'Hola {nombre}, bienvenido al club {club}, {mensaje}')
 
-print(bienvenida("joel", "River Plate", "ahora puede conocer el monumental"))
+bienvenida("joel", "River Plate", "ahora puede conocer el monumental")
 bienvenida("beto", "belgrano", "el sabado ganan el clasico")
